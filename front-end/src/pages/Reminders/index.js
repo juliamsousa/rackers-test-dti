@@ -16,8 +16,32 @@ export default function Reminders() {
       })
     }, []);
 
+    const compareDates = (d1, d2) => {
+      let date1 = new Date(d1).getTime();
+      let date2 = new Date(d2).getTime();
+    
+      if (date1 < date2) {
+        console.log(`${d1} is less than ${d2}`);
+        return 1;
+      } else if (date1 > date2) {
+        console.log(`${d1} is greater than ${d2}`);
+        return 2;
+      } else {
+        console.log(`Both dates are equal`);
+        return 0;
+      }
+    };
+
   async function handleSubmit(e) {
     e.preventDefault();
+
+    const currentDate = new Date(Date.now());
+    const dateComparison = compareDates(currentDate, date);
+
+    if (name === "" || dateComparison!==1) {
+      alert("Preenchimento do lembrete incorreto! Tente novamente");
+      return;
+    }
 
     const data = {
       name,
@@ -72,7 +96,7 @@ export default function Reminders() {
               ></input>
 
             </label>
-            <button className="button" onClick={handleSubmit}>Criar</button>
+            <button className="button" type="submit" onClick={handleSubmit}>Criar</button>
           </form>
 
         </section>
