@@ -1,12 +1,13 @@
-# Ferramenta de Lembretes - Teste dti
+
+![dti](https://media.licdn.com/dms/image/C4E16AQF-bei1CGHZqw/profile-displaybackgroundimage-shrink_200_800/0/1567723450681?e=2147483647&v=beta&t=rZNMCPaK9osWnC0SLe06BYC3M32mk_PwcnbOrFbIH64)
+
+# 👩‍💻 Ferramenta de Lembretes - Teste dti
 
 Repositório contendo o código desenvolvido durante o processo seletivo da dti, que consiste em uma ferramenta de lembretes. A ferramenta construída é baseada em Web, utilizando a linguagem JavaScript em sua implementação.
 
 A stack do JavaScript foi escolhida devido à familiriadade com a linguagem, assim como a disponibilidade de materiais de estudo desenvolvidos anteriormente.
 
-<hr/>
-
-## Front End
+## 👾 Front End
 
 O front end da aplicação foi desenvolvido com React.js, sem a utilização de bibliotecas de componentes. A aplicação é single page e apresenta apenas uma tela principal com o formulário de preenchimento dos lembretes e o botão de submissão. Abaixo do formulário são listados os lembretes cadastrados.
 
@@ -16,11 +17,7 @@ Os dados são buscados de uma API, fornecida por um back end implementado em Nod
 
 O axios é um cliente para o navegador e para node.js que realiza requisições http.
 
-
-<hr/>
-
-
-## Back End
+## 🎲 Back End
 
 O back end da aplicação foi desenvolvido utilizando Node.js. Para a construção do servidor que serve de API para o front end foi utilizado o framework Express. Essa ferramenta foi escolhida por sua facilidade e por familiaridade.
 
@@ -30,7 +27,7 @@ Para a criação da base de dados, foi utilizado o Knex.js, que é um Query Buil
 
 O Knex fornece os arquivos necessários para conexão com o banco, assim como migrações para modelar os dados e criar as tabelas de forma rápida. O nodemon foi utilizado como dependência de desenvolvimento para que a aplicação carregasse de forma automática a cada alteração.
 
-## Como executar a aplicação
+## 🖥️ Como executar a aplicação
 
 O código da aplicação se encontra hospedado em meu Github pessoal:
 
@@ -68,8 +65,6 @@ Imagem da interface da aplicação no browser:
 
 ![estrutura](doc_images/image4.png)
 
-<hr>
-
-## Limitações
+## 🚧 Limitações
 
 Não foram utilizados CSS/SCSS modules ou Styled Components, apenas CSS puro. Além disso, os lembretes não estão categorizados por sua data, nem exibidos em ordem cronológica. São exibidos na ordem em que são cadastrados. Também não foram implementados testes unitários para o front ou back end.
